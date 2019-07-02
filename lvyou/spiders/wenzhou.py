@@ -8,6 +8,7 @@ def xinxi(pre, str):
         return re.findall(pre, str, re.S)[0]
     except:
         return 'None'
+
 class WenzhouSpider(scrapy.Spider):
     name = 'wenzhoulvyou'
     start_urls = ['http://you.ctrip.com/sight/wenzhou153/s0-p1.html']
